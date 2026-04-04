@@ -37,7 +37,7 @@ export default function ContactPage() {
                   href="mailto:info@magnumauctiongroup.com"
                   className="mt-1 block text-base text-gray-900 hover:text-[#0b5d3b]"
                 >
-                  info@magnumauctiongroup.com
+                  goodwinauctions@gmail.com
                 </a>
               </div>
 

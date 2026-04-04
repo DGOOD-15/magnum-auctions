@@ -16,11 +16,14 @@ export default function AuctionsPage() {
 
         <div className="mt-8">
           <AuctionCard
-            title="Farm Equipment Auction"
-            date="Saturday, April 20, 2026"
-            time="10:00 AM"
-            location="Cadiz, KY"
-            description="Join us for an upcoming farm equipment auction featuring tractors, implements, tools, trailers, and more. Additional sale details and item highlights will be posted as the auction date approaches."
+            title="Huge Estate Auction"
+            date="Saturday, April 25, 2026"
+            time="9:30 AM Central"
+            location="Valor Hall in Oak Grove KY"
+            description="Join us for an upcoming Estate auction featuring Three 1936 (2-cars and 1 truck) BEAUTIFUL AUTOS,  Wurlitzer 1015 One More Time Jukebox,  2020 Kawasaki Vulcan (Rare Baby Blue Color,
+             only 950 Miles), LOADS OF RARE PRIMITIVE PIECES,  Many Signs, Over 200 Tobacco Tins (Some As old As Turn Of The Century), Several Things That Go Bang, Many different and very old Railroad Lanterns
+              and other Railroad Collectibles,  Several Gas and Oil Related Collectibles,  Several Antique Cast Iron Mechanical Banks and Other Advertising Items, & Much Much More!! 
+All items will be cataloged and pictured soon! "
             images={[
               "/images/auction-1.jpg",
               "/images/auction-2.jpg",
