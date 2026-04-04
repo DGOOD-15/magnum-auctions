@@ -27,29 +27,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     <body
-  className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-gray-50 to-gray-300`}
->
-  
-<div className="flex h-14 w-full text-white">
-  {/* LEFT HALF */}
-  <Link
-    href="/auctions"
-    className="flex w-1/2 items-center justify-center bg-red-900 text-sm font-semibold hover:bg-red-800 transition-colors"
-  >
-    View Upcoming Auctions
-  </Link>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-b from-gray-50 to-gray-300`}
+      >
+        {/* TOP BAR */}
+        <div className="flex h-14 w-full text-white">
+          {/* LEFT HALF */}
+          <Link
+            href="/auctions"
+            className="flex w-1/2 items-center justify-center bg-[#084d30] text-sm font-semibold hover:bg-[#073d27] transition-colors"
+          >
+            View Upcoming Auctions
+          </Link>
 
-  {/* RIGHT HALF */}
-  <Link
-    href="/hire-us"
-    className="flex w-1/2 items-center justify-center bg-red-700 text-sm font-semibold hover:bg-red-600 transition-colors"
-  >
-    Hire Us
-  </Link>
-</div>
-
-
+          {/* RIGHT HALF */}
+          <Link
+            href="/hire-us"
+            className="flex w-1/2 items-center justify-center bg-[#0b5d3b] text-sm font-semibold hover:bg-[#0e6f47] transition-colors"
+          >
+            Hire Us
+          </Link>
+        </div>
 
         {/* MAIN HEADER */}
         <header className="sticky top-0 z-50 border-b bg-white">
@@ -63,13 +61,13 @@ export default function RootLayout({
               </Link>
 
               <nav className="flex items-center gap-6 text-sm font-medium text-gray-700">
-                <Link href="/" className="hover:text-gray-900">
+                <Link href="/" className="hover:text-[#0b5d3b]">
                   Home
                 </Link>
-                <Link href="/auctions" className="hover:text-gray-900">
+                <Link href="/auctions" className="hover:text-[#0b5d3b]">
                   Auctions
                 </Link>
-                <Link href="/contact" className="hover:text-gray-900">
+                <Link href="/contact" className="hover:text-[#0b5d3b]">
                   Contact
                 </Link>
               </nav>
@@ -78,10 +76,7 @@ export default function RootLayout({
         </header>
 
         {/* PAGE CONTENT */}
-        <main className="min-h-[70vh] py-10">
-
-          {children}
-        </main>
+        <main className="min-h-[70vh] py-10">{children}</main>
 
         {/* FOOTER */}
         <footer className="border-t bg-white">
@@ -102,7 +97,7 @@ export default function RootLayout({
                   <li>
                     <Link
                       href="/auctions"
-                      className="hover:text-gray-900"
+                      className="hover:text-[#0b5d3b]"
                     >
                       Upcoming Auctions
                     </Link>
@@ -110,7 +105,7 @@ export default function RootLayout({
                   <li>
                     <Link
                       href="/contact"
-                      className="hover:text-gray-900"
+                      className="hover:text-[#0b5d3b]"
                     >
                       Contact
                     </Link>
@@ -123,14 +118,14 @@ export default function RootLayout({
                 <p className="mt-2 text-sm text-gray-600">
                   Phone: (270) 839-7235
                   <br />
-                  Email: info@magnumauctions.com
+                  Email: info@magnumauctiongroup.com
                 </p>
               </div>
             </div>
 
             <div className="border-t py-6 text-sm text-gray-600">
-              © {new Date().getFullYear()} Magnum Real Estate &amp; Auction Group.
-              All rights reserved.
+              © 2026 Magnum Real Estate &amp; Auction Group. All rights
+              reserved.
             </div>
           </Container>
         </footer>
